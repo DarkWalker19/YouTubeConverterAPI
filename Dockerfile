@@ -8,6 +8,6 @@ COPY index.js .
 COPY config.json .
 
 RUN npm install
-CMD ["npm", "start"]
+RUN npm start
 
 EXPOSE 9000
