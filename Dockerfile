@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:alpine3.12
 
 WORKDIR /app
 
@@ -8,6 +8,6 @@ COPY index.js .
 COPY config.json .
 
 RUN npm install
-RUN npm start
+CMD ["npm", "start"]
 
 EXPOSE 9000
