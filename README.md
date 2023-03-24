@@ -43,7 +43,7 @@ npm start
    ```
 4. Run the Docker container:
    ```bash
-   docker run -d --name youtubeconverterapi -p 9000:9000 youtubeconverterapi
+   docker run -d --name youtubeconverterapi [--restart=always] -p 9000:9000 youtubeconverterapi
    ```
 
 The API should now be available at http://localhost:9000 by default.
