@@ -4,7 +4,12 @@ const ytdl = require("ytdl-core");
 const { port } = require("./config.json");
 
 const app = express();
-app.use(cors());
+app.use(
+	cors({
+		origin: "*",
+		exposedHeaders: ["Content-Disposition", "Access-Control-Allow-Origin"],
+	})
+);
 
 const allowedFormats = ["mp3", "mp4"];
 const ytdlOptions = {
