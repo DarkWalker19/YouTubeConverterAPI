@@ -22,9 +22,9 @@ A nodejs API used for downloading YouTube videos in the following formats: mp3,m
    npm install
    ```
 4. Start the API:
-   `bash
-npm start
-`
+   ```bash
+   npm start
+   ```
    The API should now be available at http://localhost:9000 by default.
 
 ## Installation for Docker
