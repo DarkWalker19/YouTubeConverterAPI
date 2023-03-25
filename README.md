@@ -47,7 +47,7 @@ A nodejs API used for downloading YouTube videos in the following formats: mp3,m
    ```
    Always restart container after reboot:
    ```bash
-   docker run -d --name youtubeconverterapi --restart=always -p 9000:9000 youtubeconverterapi
+   docker run -d --name youtubeconverterapi --restart=unless-stopped -p 9000:9000 youtubeconverterapi
    ```
 
 The API should now be available at http://localhost:9000 by default.
